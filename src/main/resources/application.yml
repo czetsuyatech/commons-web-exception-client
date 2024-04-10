@@ -1,7 +1,14 @@
+logging:
+  level:
+    root: info
+    com.czetsuyatech.commons.webexception: debug
+
 server:
   port: 8080
   servlet:
     context-path: /api
+
 spring:
   application:
     name: commons-web-exception-client
+
