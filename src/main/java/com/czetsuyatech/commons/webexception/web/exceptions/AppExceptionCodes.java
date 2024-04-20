@@ -2,6 +2,7 @@ package com.czetsuyatech.commons.webexception.web.exceptions;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
+import lombok.Getter;
 
 /**
  * Error codes for this component with the ff prefixes:
@@ -12,6 +13,7 @@ import java.util.Map;
  *   'E' - entity error
  * </pre>
  */
+@Getter
 public enum AppExceptionCodes {
 
   USER_CREATION_FAILED("A1001", "Use creation failed"),
@@ -28,19 +30,11 @@ public enum AppExceptionCodes {
     this.message = message;
   }
 
-  public String getCode() {
-    return code;
-  }
-
-  public String getDesc() {
-    return message;
-  }
-
   public static Map<String, String> getMapValues() {
 
     Map<String, String> map = new LinkedHashMap<>();
     for (AppExceptionCodes errCode : values()) {
-      map.put(errCode.getCode(), errCode.getDesc());
+      map.put(errCode.getCode(), errCode.getMessage());
     }
 
     return map;
