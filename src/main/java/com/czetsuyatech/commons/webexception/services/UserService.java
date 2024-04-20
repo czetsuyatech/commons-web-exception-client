@@ -4,5 +4,7 @@ import com.czetsuyatech.commons.webexception.services.pojos.User;
 
 public interface UserService {
 
-  void createUser(User user);
+  void createUserAndThrowException(User user);
+
+  void createUserAndThrowCustomException(User user);
 }

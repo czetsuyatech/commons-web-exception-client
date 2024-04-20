@@ -7,36 +7,35 @@ import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.http.HttpStatus;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.server.ResponseStatusException;
 
 @Slf4j
 @RestController
 @Validated
-@RequestMapping("/native-exceptions")
+@RequestMapping("/service-exceptions")
 @RequiredArgsConstructor
-public class NativeExceptionController {
+public class ServiceExceptionController {
 
   private final UserService userService;
   private final Web2ServiceMapper web2ServiceMapper;
 
-  @PostMapping("/method-arguments")
-  public void methodArgumentValidation(@RequestBody @Valid @NotNull UserV1 userV1) {
+  @PostMapping("/users/exceptions")
+  public void createUserAndThrowException(@RequestBody @Valid @NotNull UserV1 userV1) {
 
-    log.debug("Testing method arguments {}", userV1);
+    log.debug("Request to create user={}", userV1);
+
+    userService.createUserAndThrowException(web2ServiceMapper.asUser(userV1));
   }
 
-  @GetMapping("/forbidden")
-  public void forbidden() {
+  @PostMapping("/users/custom-exceptions")
+  public void createUserAndThrowCustomException(@RequestBody @Valid @NotNull UserV1 userV1) {
 
-    log.info("Testing forbidden");
+    log.debug("Request to create user={} with custom exception", userV1);
 
-    throw new ResponseStatusException(HttpStatus.FORBIDDEN);
+    userService.createUserAndThrowCustomException(web2ServiceMapper.asUser(userV1));
   }
 }

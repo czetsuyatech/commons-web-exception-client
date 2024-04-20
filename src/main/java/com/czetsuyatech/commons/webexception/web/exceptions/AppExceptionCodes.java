@@ -20,7 +20,10 @@ public enum AppExceptionCodes {
   USER_EID_NOT_FOUND("A1002", "User not found"),
   USER_EMAIL_NOT_FOUND("A1003", "User not found"),
   USER_PHONE_NOT_FOUND("A1004", "User not found"),
-  ORGANIZATION_NOT_FOUND("A1005", "Organization not found");
+  ORGANIZATION_NOT_FOUND("A1005", "Organization not found"),
+  BUSINESS_EXCEPTION_X("B1001", "Business exception"),
+  //
+  ;
 
   private String code;
   private String message;
