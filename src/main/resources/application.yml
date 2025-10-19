@@ -12,3 +12,6 @@ spring:
   application:
     name: commons-web-exception-client
 
+czetsuya-tech:
+  web-exceptions:
+    enabled: true
