@@ -1,6 +1,6 @@
-package com.czetsuyatech.commons.webexception.web.exceptions;
+package com.czetsuyatech.web.exceptions.client.web.exceptions;
 
-import com.czetsuyatech.commons.web.exceptions.AbstractWebExceptionHandler;
+import com.czetsuyatech.web.exceptions.AbstractWebExceptionHandler;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RestControllerAdvice;

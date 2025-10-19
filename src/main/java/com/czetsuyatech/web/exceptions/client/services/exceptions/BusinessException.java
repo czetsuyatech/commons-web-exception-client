@@ -1,7 +1,7 @@
-package com.czetsuyatech.commons.webexception.services.exceptions;
+package com.czetsuyatech.web.exceptions.client.services.exceptions;
 
-import com.czetsuyatech.commons.webexception.web.exceptions.AppExceptionCodes;
-import com.czetsuyatech.commons.webexception.web.exceptions.WebException;
+import com.czetsuyatech.web.exceptions.client.web.exceptions.AppExceptionCodes;
+import com.czetsuyatech.web.exceptions.client.web.exceptions.WebException;
 import org.springframework.http.HttpStatus;
 
 public class BusinessException extends WebException {

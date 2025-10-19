@@ -1,6 +1,6 @@
-package com.czetsuyatech.commons.webexception.web.exceptions;
+package com.czetsuyatech.web.exceptions.client.web.exceptions;
 
-import com.czetsuyatech.commons.web.exceptions.AbstractWebExceptions;
+import com.czetsuyatech.web.exceptions.AbstractWebExceptions;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 

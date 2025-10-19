@@ -1,6 +1,6 @@
-package com.czetsuyatech.commons.webexception.services;
+package com.czetsuyatech.web.exceptions.client.services;
 
-import com.czetsuyatech.commons.webexception.services.pojos.User;
+import com.czetsuyatech.web.exceptions.client.services.pojos.User;
 
 public interface UserService {
 

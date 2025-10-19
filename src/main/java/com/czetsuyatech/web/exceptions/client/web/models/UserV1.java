@@ -1,4 +1,4 @@
-package com.czetsuyatech.commons.webexception.web.models;
+package com.czetsuyatech.web.exceptions.client.web.models;
 
 import jakarta.validation.constraints.AssertTrue;
 import jakarta.validation.constraints.NotNull;

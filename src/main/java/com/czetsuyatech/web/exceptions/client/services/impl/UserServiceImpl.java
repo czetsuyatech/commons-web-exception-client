@@ -1,10 +1,10 @@
-package com.czetsuyatech.commons.webexception.services.impl;
+package com.czetsuyatech.web.exceptions.client.services.impl;
 
-import com.czetsuyatech.commons.webexception.services.UserService;
-import com.czetsuyatech.commons.webexception.services.exceptions.BusinessException;
-import com.czetsuyatech.commons.webexception.services.pojos.User;
-import com.czetsuyatech.commons.webexception.web.exceptions.AppExceptionCodes;
-import com.czetsuyatech.commons.webexception.web.exceptions.WebException;
+import com.czetsuyatech.web.exceptions.client.services.UserService;
+import com.czetsuyatech.web.exceptions.client.services.exceptions.BusinessException;
+import com.czetsuyatech.web.exceptions.client.services.pojos.User;
+import com.czetsuyatech.web.exceptions.client.web.exceptions.AppExceptionCodes;
+import com.czetsuyatech.web.exceptions.client.web.exceptions.WebException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;

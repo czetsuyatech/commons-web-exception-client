@@ -1,7 +1,7 @@
-package com.czetsuyatech.commons.webexception.mappers;
+package com.czetsuyatech.web.exceptions.client.mappers;
 
-import com.czetsuyatech.commons.webexception.services.pojos.User;
-import com.czetsuyatech.commons.webexception.web.models.UserV1;
+import com.czetsuyatech.web.exceptions.client.services.pojos.User;
+import com.czetsuyatech.web.exceptions.client.web.models.UserV1;
 import org.mapstruct.InjectionStrategy;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingConstants.ComponentModel;

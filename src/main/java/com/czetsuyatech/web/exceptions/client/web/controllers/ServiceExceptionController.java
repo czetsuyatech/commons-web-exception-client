@@ -1,8 +1,8 @@
-package com.czetsuyatech.commons.webexception.web.controllers;
+package com.czetsuyatech.web.exceptions.client.web.controllers;
 
-import com.czetsuyatech.commons.webexception.mappers.Web2ServiceMapper;
-import com.czetsuyatech.commons.webexception.services.UserService;
-import com.czetsuyatech.commons.webexception.web.models.UserV1;
+import com.czetsuyatech.web.exceptions.client.mappers.Web2ServiceMapper;
+import com.czetsuyatech.web.exceptions.client.services.UserService;
+import com.czetsuyatech.web.exceptions.client.web.models.UserV1;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
 import lombok.RequiredArgsConstructor;

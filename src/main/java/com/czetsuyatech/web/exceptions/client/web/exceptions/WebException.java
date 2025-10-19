@@ -1,6 +1,6 @@
-package com.czetsuyatech.commons.webexception.web.exceptions;
+package com.czetsuyatech.web.exceptions.client.web.exceptions;
 
-import com.czetsuyatech.commons.web.exceptions.WebBaseException;
+import com.czetsuyatech.web.exceptions.WebBaseException;
 import org.springframework.http.HttpStatusCode;
 
 public class WebException extends WebBaseException {

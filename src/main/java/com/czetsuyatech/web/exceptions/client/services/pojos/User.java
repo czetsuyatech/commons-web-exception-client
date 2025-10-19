@@ -1,4 +1,4 @@
-package com.czetsuyatech.commons.webexception.services.pojos;
+package com.czetsuyatech.web.exceptions.client.services.pojos;
 
 import java.time.Instant;
 import lombok.Data;
