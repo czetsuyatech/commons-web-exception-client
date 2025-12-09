@@ -7,10 +7,11 @@ import org.springframework.boot.jdbc.autoconfigure.DataSourceAutoConfiguration;
 
 @EnableConfigurationProperties
 @SpringBootApplication(
-    exclude = DataSourceAutoConfiguration.class,
-    excludeName = {
-        "org.springframework.cloud.autoconfigure.RefreshAutoConfiguration"
-    })
+    exclude = DataSourceAutoConfiguration.class
+//    excludeName = {
+//        "org.springframework.cloud.autoconfigure.RefreshAutoConfiguration"
+//    }
+)
 public class Application {
 
   public static void main(String[] args) {

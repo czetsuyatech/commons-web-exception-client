@@ -1,7 +1,5 @@
 package com.czetsuyatech.web.exceptions.client.web.controller;
 
-import com.czetsuyatech.web.exceptions.client.application.mapper.Web2ServiceMapper;
-import com.czetsuyatech.web.exceptions.client.service.UserService;
 import com.czetsuyatech.web.exceptions.client.web.model.UserV1;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
@@ -22,9 +20,6 @@ import org.springframework.web.server.ResponseStatusException;
 @RequestMapping("/native-exceptions")
 @RequiredArgsConstructor
 public class NativeExceptionController {
-
-  private final UserService userService;
-  private final Web2ServiceMapper web2ServiceMapper;
 
   @PostMapping("/method-arguments")
   public void methodArgumentValidation(@RequestBody @Valid @NotNull UserV1 userV1) {
