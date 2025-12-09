@@ -1,4 +1,4 @@
-package com.czetsuyatech.web.exceptions.client.web.exceptions;
+package com.czetsuyatech.web.exceptions.client.web.exception;
 
 import com.czetsuyatech.web.exceptions.AbstractWebExceptions;
 import org.springframework.beans.factory.annotation.Value;

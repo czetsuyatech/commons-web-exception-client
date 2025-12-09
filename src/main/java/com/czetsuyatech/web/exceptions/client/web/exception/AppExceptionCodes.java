@@ -1,4 +1,4 @@
-package com.czetsuyatech.web.exceptions.client.web.exceptions;
+package com.czetsuyatech.web.exceptions.client.web.exception;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
